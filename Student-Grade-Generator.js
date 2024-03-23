@@ -1,22 +1,23 @@
 //Initialization of the main function
 function examgrade(grades){
-    return grades.map(function(grade) {
-  //Introduction of comditional statements  
- if(grade > 79){
+//Using the '.map()' to store the results to a new array
+return grades.map(function(grade) {
+//Introduction of comditional statements  
+   if(grade > 79){
     return "A";
- }else if(grade >= 60 && grade <=79 ){
+   }else if(grade >= 60 && grade <=79 ){
     return "B";
- }else if(grade >= 49 && grade <=59){
+   }else if(grade >= 49 && grade <=59){
     return "C";
- }else if(grade >= 40 && grade <=49){
+   }else if(grade >= 40 && grade <=49){
     return "D";
- }else{
+   }else{
     return "E";
  }
- 
+
  });
  }
- //var created to allow user to enter marks
- let exam = examgrade([80]);
- //command to return the respective grade
+ //Var created to allow user to enter marks
+ let exam = examgrade([]);
+ //Logs the result to the console
  console.log(exam)

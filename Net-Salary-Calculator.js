@@ -1,10 +1,10 @@
-//Determine Gross income
+//function that determines Gross income
 function grossIncome(basicSalary, benefits){
     const grossAmount = basicSalary + benefits;
     return grossAmount;
 }
 
-//Define NHIF rates
+//Function that defines NHIF rates
 function calculateNHIFDeductions(basicSalary, benefits){
     const grosspay = grossIncome(basicSalary, benefits)
         if (grosspay >= 0 && grosspay  <= 5999) {
